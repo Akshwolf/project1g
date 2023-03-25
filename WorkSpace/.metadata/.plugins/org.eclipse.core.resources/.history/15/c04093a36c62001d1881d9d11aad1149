@@ -1,0 +1,16 @@
+package Package2;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumPractise {
+
+	public static void main(String args[])
+    {
+		System.setProperty("webdriver.chrome.driver","E:\\Acceleration\\WorkSpace\\Selenium\\Executable\\chromedriver.exe");
+		ChromeDriver cdriver= new ChromeDriver();
+		cdriver.get("https://www.amazon.com");
+		cdriver.findElementById("twotabsearchtextbox").sendKeys("Alexa home decor");
+	cdriver.findElementById("nav-search-submit-button").click();
+	cdriver.findElementByTagName("class=\"a-m-us a-aui_72554-c a-aui_accordion_a11y_role_354025-c a-aui_killswitch_csa_logger_372963-c a-aui_launch_2021_ally_fixes_392482-t1 a-aui_pci_risk_banner_210084-c a-aui_preload_261698-c a-aui_rel_noreferrer_noopener_309527-c a-aui_template_weblab_cache_333406-c a-aui_tnr_v2_180836-c a-meter-animate\"").click();
+    }
+}

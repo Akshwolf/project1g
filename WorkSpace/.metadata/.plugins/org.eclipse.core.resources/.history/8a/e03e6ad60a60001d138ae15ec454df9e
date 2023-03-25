@@ -1,0 +1,12 @@
+package Package2;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class SeleniumPractise {
+
+	public static void main(String args[])
+    {
+		System.setProperty("webdriver.chrome.driver","E:\\Acceleration\\WorkSpace\\Selenium\\Executable\\chromedriver.exe");
+		ChromeDriver cdriver= new ChromeDriver();
+    }
+}
